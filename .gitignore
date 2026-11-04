@@ -1,0 +1,8 @@
+.env
+data/*.sqlite*
+data/inbox/
+data/assets/
+data/exports/
+data/backups-local/
+node_modules/
+STOP

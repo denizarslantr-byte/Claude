@@ -1,0 +1,11 @@
+mode: autonomous_phases
+phase_order: [F0, F2, F3, F4, F7a, F5, F7b, F6, F8, F9]
+auto_advance_on: all_technical_tests_pass_in_clean_rerun
+max_fix_attempts_per_task: 3
+workspace_root: "/home/user/Claude"
+allowed_actions: [create_edit_files_in_workspace, run_unit_integration_tests, git_commit_and_tag_in_workspace, mock_provider_calls, local_db_migrations_with_backup_first]
+hard_deny: [change_firewall_rdp_vpn_or_account_security, touch_other_apps_or_data_on_vps, delete_or_overwrite_outside_workspace, login_to_social_accounts_or_publish, spend_beyond_budget_envelope, read_or_log_secrets_in_plain_text, automate_google_flow_ui, install_software_outside_allowlist, permanent_delete_db_or_final_media, clone_third_party_voice_without_consent_record]
+budget: { daily_api_usd: 0, monthly_api_usd: 0, project_api_usd: 0 }
+circuit_breakers: { budget_daily_burn_alert_pct: 50, consecutive_failures_stop: 5, disk_usage_stop_pct: 90 }
+notify: { telegram_digest: daily, needs_reply: false }
+kill_switch: { file: "STOP", telegram_command: "/stop" }

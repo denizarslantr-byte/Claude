@@ -1,0 +1,14 @@
+{
+  "name": "ai-video-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "test": "node --experimental-sqlite --no-warnings --test \"tests/**/*.test.js\"",
+    "start:api": "node --experimental-sqlite --no-warnings apps/control-api/src/server.js",
+    "audit": "node scripts/f0-audit.mjs"
+  }
+}
