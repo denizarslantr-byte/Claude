@@ -1,0 +1,11 @@
+{
+  "_note": "Model adları koda gömülmez; buradan okunur. Fiyat/sürüm F0'da resmî kaynaktan doğrulanıp tarihle doldurulacak (şimdilik null = doğrulanmadı).",
+  "providers": {
+    "mock-a": { "kind": "mock", "model": "mock-a-1", "price_in_per_1m": 0, "price_out_per_1m": 0, "verified_at": null, "source_url": null },
+    "mock-b": { "kind": "mock", "model": "mock-b-1", "price_in_per_1m": 0, "price_out_per_1m": 0, "verified_at": null, "source_url": null },
+    "gemini": { "kind": "live", "env_key": "GEMINI_API_KEY", "model": null, "price_in_per_1m": null, "price_out_per_1m": null, "verified_at": null, "source_url": null },
+    "claude": { "kind": "live", "env_key": "ANTHROPIC_API_KEY", "model": null, "price_in_per_1m": null, "price_out_per_1m": null, "verified_at": null, "source_url": null },
+    "deepseek": { "kind": "live", "env_key": "DEEPSEEK_API_KEY", "model": null, "price_in_per_1m": null, "price_out_per_1m": null, "verified_at": null, "source_url": null }
+  },
+  "task_routing": {}
+}

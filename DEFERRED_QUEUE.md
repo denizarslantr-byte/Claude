@@ -5,3 +5,4 @@
 | Windows VPS keşfi (RDP kapalı/reboot testi, NSSM servis) | Ajan Linux bulutunda çalışıyor, VPS erişimi yok | F0 | `scripts/f0-audit.mjs` ile bu ortam ölçüldü; VPS'de aynı betik çalıştırılabilir | VPS'de `npm run audit` çıktısını `reports/` altına koymak |
 | Gerçek LLM/TTS/Telegram anahtarları, bütçe > 0 | Girdi paketi yok, bütçe 0 | F4, F5, F6 | Mock sağlayıcı, canlı testler `SKIPPED` | `.env` ve `AUTONOMY_POLICY.yaml` bütçesi |
 | Dış yedek hedefi | Tanımsız | F7a | Yerel yedek, `CONDITIONAL` | `BACKUP_TARGET` |
+| Canlı LLM adaptörleri + 24 görev benchmark, provider-matrix model/fiyat | Anahtar yok, bütçe 0, fiyat/model F0'da doğrulanmadı | F4 | Mock + harness hazır; routing boş (varsayılan kazanan yok) | API anahtarları, bütçe > 0 |
