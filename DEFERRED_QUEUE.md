@@ -6,3 +6,4 @@
 | Gerçek LLM/TTS/Telegram anahtarları, bütçe > 0 | Girdi paketi yok, bütçe 0 | F4, F5, F6 | Mock sağlayıcı, canlı testler `SKIPPED` | `.env` ve `AUTONOMY_POLICY.yaml` bütçesi |
 | Dış yedek hedefi | Tanımsız | F7a | Yerel yedek, `CONDITIONAL` | `BACKUP_TARGET` |
 | Canlı LLM adaptörleri + 24 görev benchmark, provider-matrix model/fiyat | Anahtar yok, bütçe 0, fiyat/model F0'da doğrulanmadı | F4 | Mock + harness hazır; routing boş (varsayılan kazanan yok) | API anahtarları, bütçe > 0 |
+| Dış yedek hedefi + gerçek reboot/RDP-kapalı testi | BACKUP_TARGET tanımsız, VPS yok | F7a | Yerel yedek+restore testi PASS; dış kopya mantığı test edildi | BACKUP_TARGET, VPS erişimi |
