@@ -1,7 +1,7 @@
 # AI Video Studio V7 — Uygulama Raporu
 
 **Tarih:** 05.11.2026 · **Dal:** `ccr-eed0d143-jl8qnl` · **Spec:** `docs/SPEC_V7.md`
-**Test durumu:** `npm test` → 37/37 PASS (Node ≥22.5, bağımlılıksız)
+**Test durumu:** `npm test` → 64/64 PASS (Node ≥22.5, bağımlılıksız)
 
 ## 1. Tamamlanan fazlar
 
@@ -40,3 +40,7 @@ Otomasyon: her 5 saatte bir rutin bu oturumu `PROGRESS.md`'den devam ettirir (ko
 - Remotion henüz kurulmadı; render şimdilik ffmpeg mock.
 - Zod yerine elle doğrulama, YAML yerine JSON kullanıldı (`docs/DECISIONS.md`).
 - Gerçek MVP kabulü için kanal koşulları (3 yayın, 7 günlük veri) ve açık dış doğrulamalar kapanmalı.
+
+## 3. Güncelleme (devam turu)
+F5, F7b, F6, F8, F9 ve AUTO-01..07 yazıldı; 64/64 test geçiyor. Hepsi mock/yerel doğrulandı.
+Kalan **yalnızca dış girdi ve kanal** işleri: canlı API anahtarları + bütçe, TTS/Whisper/Remotion kurulumu, Telegram bot + n8n kurulumu (VPS), dış yedek hedefi, gerçek VPS testleri, 3 gerçek pilot yayın ve 7 günlük metrik. Ayrıntı: `DEFERRED_QUEUE.md`.

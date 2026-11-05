@@ -9,7 +9,12 @@
 | F7a | CONDITIONAL | 6 test PASS: yedek→kayıp→restore, hash/bütünlük, açılışta UNKNOWN kurtarma, disk %90 kesici, STOP dosyası, WAL. Dış yedek hedefi (BACKUP_TARGET) ve reboot/RDP testleri bekliyor |
 | F5 | CONDITIONAL | 6 test PASS: TR normalizasyon (40 cümle paketi), mock TTS + ffprobe süre, kelime hizalama, SRT/taşma, Flow importer (yarım/bozuk/yanlış sahne/lisanssız/çözünürlük, kredi kaydı). Canlı TTS, Whisper, Remotion SKIPPED |
 | F7b | PASS (teknik) | 6 test: siyah/donuk/sessizlik/kırpılma enjekte hata tespiti, yayın kapısı (QA, iddia, lisans, hash) |
-| F6, F8, F9 | SIRADA | n8n/Telegram, yayın paketi, analitik |
+| F6 | CONDITIONAL | 5 test PASS: izinli chat/user, çift callback tek işlem, /stop, n8n JSON (retry kapalı, localhost). Canlı Telegram + n8n kurulumu SKIPPED |
+| F8 | CONDITIONAL | 2 test PASS: paket kuralları, onaysız yayın engeli, URL/hash doğrulama. 3 gerçek pilot yayın kanal kapısı (kullanıcı) |
+| F9 | CONDITIONAL | 1 test PASS: YPP ilerleme, DATA_UNAVAILABLE/ESTIMATE, başabaş. 7 günlük gerçek veri kanal kapısı |
+| AUTO-01..07 | PASS | tests/integration/auto.test.js (temiz klasör kapısı, kill switch, hard_deny, bütçe 0, 3 deneme, 5 hata durdurma, geri alma) |
+
+**Tüm teknik kapılar tamam (64/64 test).** Kalanlar yalnızca dış girdi/kanal: bkz. DEFERRED_QUEUE.md ve RAPOR.md.
 
 Çalıştırma: `npm test` (Node ≥22.5, bağımlılıksız: node:sqlite + node:test).
 Kararlar: Zod yerine elle doğrulama (bağımlılık yok); Remotion F5'te eklenecek.
